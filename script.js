@@ -34,7 +34,7 @@ function calculateCaloricIntake(activityLevel, BMR) {
 
 
     const BMR = calculateBMR(weight, height, age, gender);
-    const caloricIntake = calculateCaloricIntake(activityLevel, BMR)-500;
+    const caloricIntake = calculateCaloricIntake(activityLevel, BMR);
     document.getElementById('result').innerHTML = `Twoje zapotrzebowanie kaloryczne wynosi ${Math.round(caloricIntake)} kalorii.`;
 
     const proteincalories = 8*weight;
