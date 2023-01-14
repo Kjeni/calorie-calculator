@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bulk&Cut - Kalkulator kalorii:</title>
+    <link rel="Stylesheet" type="text/css" href="stylekalkulator.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+  <div class="logo">
+    <a href="../index.html"><img src="src/Vector.svg" width='400px' height='255px'></a>
+  </div>
+    
+    <div class="menu">
+      <table class="menu1">
+          <tr>
+              <th class="menu2"><a href="../onas/index_onas.html"><button class="menu2">O NAS</button></a></th>
+              <th class="menu2"><a href="../kontakt/index_kontakt.html"><button class="menu2">KONTAKT</button></a></th>
+              <th class="menu2"><a href="../index.html"><button class="menu2">GŁÓWNA</button></a></th>
+            </tr>
+      </table>
+  </div>
+
+  <div class="container">
+    <div class="bulk">
+  <fieldset>
+  <legend>Oblicz swoje zapotrzebowanie kaloryczne:</legend>
+  <div id="formularz">
+    <form id="form" autocomplete="off">
+      <label for="weight">Waga (kg):</label><br>
+      <input type="number" id="weight" maxlength="3" required><br>
+      <label for="height">Wzrost (cm):</label><br>
+      <input type="number" id="height" maxlength="3" required><br>
+      <label for="age">Wiek:</label><br>
+      <input type="number" id="age" maxlength="3" required><br>
+      <label for="gender">Płeć:</label><br>
+      <span><input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Mężczyzna</label></span>
+      <span><input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Kobieta</label></span><br>
+      <label for="activity-level">Poziom aktywności:</label><br>
+      <select id="activity-level">
+        <option value="sedentary">Znikoma (brak ćwiczeń, praca siedząca, szkoła)</option>
+        <option value="lightly active">Bardzo mała (ćwiczenia raz na tydzień, praca lekka)</option>
+        <option value="moderately active">Umiarkowana (ćwiczenia dwa razy w tygodniu - intensywność średnia)</option>
+        <option value="very active">Wysoka (dość ciężki trening kilka razy w tygodniu)</option>
+        <option value="extra active">Bardzo wysoka (co najmniej cztery ciężkie treningi w tygodniu)</option>
+      </select>
+      <label for="bulkcut"></label>
+      <span><input type="radio" id="bulk" name="bulkcut" value="bulk" required>
+      <label for="bulk">Chcę przytyć</label></span>
+      <span><input type="radio" id="stay" name="bulkcut" value="stay" required>
+      <label for="stay">Chcę utrzymać masę ciała</label></span>
+      <span><input type="radio" id="cut" name="bulkcut" value="cut" required>
+      <label for="cut">Chcę schudnąć</label><br></span>
+
+      <button type="button" id="button" formnovalidate="true">Oblicz</button>
+      <button id="reset">Wyczyść</button>
+    </form>
+  </div>
+  <div id="wyniki">
+  <div id="result"></div>
+  <div id="protein"></div>
+  <div id="fat"></div>
+  <div id="carb"></div>
+  <div id="fiber"></div>
+  </div>
+</fieldset>
+</div>
+<div class="wybrane">
+<img class="dis" src="src/paniblender.jpg" alt="paniwkuchni">        
+</div>
+</div>
+<div id="opis-container">
+  <h2>Kalkulator kalorii - oblicz swoje dzienne zapotrzebowanie</h2>
+  <p>
+    Dowiedz się czym jest twoje dzienne zapotrzebowanie kaloryczne i po co je liczyć za pomocą kalkulatora. <br>
+    Poznaj swoje zapotrzebowanie energetyczne - i odżywiaj się tak jak należy.<br><br>
+    Trenując musisz zdawać sobie sprawę jakie jest twoje dzienne zapotrzebowanie na kalorie oraz <br>
+    jak ważna w osiąganięciu celu jest dieta.<br>
+    Do tego przyda Ci się nasz kalkulator kalorii, aby wiedzieć ile kalorii dziennie powinieneś spożywać, wprowadzaj uzyskane tutaj dane do popularnych aplikacji, kalkulatorów kalorii (np. fitatu),
+    dzięki nim szybko wyszukasz potrzebny produkt i znajdziesz jego wartości odżywcze.
+    <h3>Jak obliczyć zapotrzebowanie kaloryczne?</h3>
+    Służy do tego nasz kalkulator! Możesz wykorzystywać go każdego dnia lub okresowo. <br>
+     Nasz kalkulator kalorii,  obliczy jak najbliższe wartości całkowitej przemiany materii (CPM).
+    <h3>Czym jest całkowita przemiana materii (CPM), dzienne zapotrzebowanie kaloryczne?</h3>
+    Na dzienne zapotrzebowanie kaloryczne człowieka, CPM składają się: kalorie które są potrzebne, aby utrzymywać podstawowe funkcje organizmu zachodzące w układzie nerwowym, wątrobie, nerkach, sercu i pozostałych narządach Twojego ciała - podstawowa przemiana materii (PPM).<br>
+    Natomiast ponadpodstawowa przemiana materii (PPPM) to energia przeznaczona na codzienne czynności - pracę fizyczną i pracę umysłową oraz energia wydatkowana na trawienie i wchłanianie pożywienia. <br>
+    Spacer, inna forma aktywności czy praca zwiększają zapotrzebowanie kaloryczne przez większą ilość spalania kalorii przez co Twój wydatek energetyczny może mocno się zwiększyć.<br>
+    Dzieci i dorośli, a także kobiety w ciąży mają inne dzienne spalanie kalorii i inne dzienne zapotrzebowanie kalorii <br>
+    czynniki głównie wiążące to: wiek, wzrost oraz waga. <br>
+    Dlatego <strong>PAMIĘTAJ</strong>, że gdy twoja waga ulegnie większej zmianie twoje CPM również!<br>
+    Manipulując ilością spożywanych kalorii możesz schudnąć lub przytyć (spożywając mniej kalorii niż wynosi twoje CPM - schudniesz, natomiast spożywając więcej kalorii - przytyjesz). - w zależności od tego jaki jest Twój cel.
+    <h3>Ile kalorii na masę a ile kalorii na redukcji?</h3>
+    Wybierając opcję "Chcę schudnąć" odejmujemy od twojego zapotrzebowania 400 kcal, natomiast po wybraniu opcji "Chcę przytyć" dodajemy 400kcal. Uważamy, że jest to optymalna ilość dla osoby początkującej.
+    <h3>Oblicz zapotrzebowanie kaloryczne odpowiednie dla Ciebie i zacznij działać!</h3>
+    Kalkulator spalonych kalorii niech towarzyszy Ci podczas całego procesu treningowego. Zrezygnuj z przetworzonej żywności i pamiętaj
+    o tym, aby wszystkie składniki w Twoim odżywianiu pokrywały również zapotrzebowanie na wodę, witaminy, minerały oraz błonnik to zapewni Ci pełną energię do treningów !
+    <h3>Dlaczego ilość spożywanego błonnika w diecie jest tak ważne?</h3>
+    Amerykańskie Towarzystwo Diabetologiczne (American Diabetes Association) zaleca konsumpcję co najmniej <br> 14 g/1000 kcal/dobę.
+    Odpowiednia ilość błonnika w diecie zmniejsza ryzyko zachorowania na cukrzycę typu II <br> oraz wspomaga samopoczucie osobom zmagającym się z każdym typem tej choroby.
+    Zbyt duże spożycie błonnika pokarmowego może doprowadzić do takich powikłań jak:
+    <ul>
+    <li>objawy niedożywienia u osób z normalną i niską masą ciała</li>
+    <li>niedobory wapnia, żelaza i cynku. Wynika to ze zdolności błonnika do wiązania tych składników mineralnych w jelicie i ich wydalania z kałem</li>
+    <li>wzdęcia, a zaparcia mogą pojawiać się przy występującej nieodpowiedniej podaży płynów</li>
+    </ul>
+    </p>
+</div>
+
+<div class="footer">
+  <table class="dol">
+      <th class="dol1">Razem z nami staniesz się lepszą wersją siebie. B&C © 2022-2023</th><th class="ikony"><a href="https://www.facebook.com/" target="_blank"><img src="src/fb.svg" alt="facebook" height="40px"></a></th><th class="ikony"><a href="https://www.instagram.com/" target="_blank"><img src="src/instagram-svgrepo-com 1.svg" alt="instagram" height="46px"></a></th>
+  </table>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+      </body>
+      </html>

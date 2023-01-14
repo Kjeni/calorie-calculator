@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@300;400&family=Teko:wght@300;400;500&display=swap');
+
+/* menu */
+div.logo {
+    display: inline-block;
+    margin-left: 30PX;
+    margin-right: auto;
+    /* border: 1px solid  */
+
+  }
+  div.menu {
+    display: inline-block;
+    position: absolute;
+    color: aliceblue;
+  
+    margin-left: 12%;
+    /* border: 1px solid  */
+  
+  }
+  table.menu1 {
+    margin-top: 40px;
+  }
+  th.menu2 {
+    width: 500px;
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+}
+th:hover {
+    opacity: 1;
+  }
+button.menu2 {
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #9b9b9b;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height:62px;
+    width: 320px;
+    font-size: 30px;
+    letter-spacing: 12px;
+    font-family: 'Teko', sans-serif;
+    transition: all 0.2s ease-in-out;
+    }
+    button.menu2:hover {
+    transform: scale(1.1);
+    }
+  
+div.container {
+    padding: 20px;
+    display: flex; 
+    width: auto;
+    position: relative;
+
+    justify-content: space-between;
+        
+    }
+div.bulk {
+    flex-basis: 70%;
+    height: 500px;
+    width: auto;
+    border: 1px solid; 
+    font-family: 'Teko',sans-serif;
+    font-size: 20px;
+
+      
+    }
+.dis {
+    object-fit: contain;
+    height: 500px; 
+    float: right;
+
+    }
+
+div.wybrane {
+    border: 1px solid; 
+    flex-basis: 50%;
+    height: 500px;
+    width: auto;
+    }
+
+/* koniecmenu */
+body {
+    background-color: #000000;
+}
+/* formularz */
+fieldset{
+    width: auto;
+}
+legend{
+    color: white;
+    margin: 0 auto;
+    font-size: 30px;
+}
+label{
+    color: white;
+    background-color: #000000;
+    font-size: 20px;
+}
+input{
+    background-color: #000000;
+    color: white;
+    margin-bottom: 0.8em;
+    font-size: 1em;
+}
+select{
+    background-color: #000000;
+    color: white;
+}
+
+#result {
+    color: white;
+}
+#protein{
+    color: white;
+}
+#fat{
+    color: white;
+}
+#carb{
+    color: white;
+}
+#fiber{
+    color: white;
+}
+div.bulk button{
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #9b9b9b;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height:40px;
+    width: 180px;
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-family: 'Teko', sans-serif;
+    transition: all 0.2s ease-in-out;
+    margin-right: 20px;
+    }
+div.bulk button:hover {
+transform: scale(1.1);
+}
+#wyniki{
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 2.5em;
+
+}
+#formularz{
+    display: inline-block;
+    width: 50%;
+
+}
+input[type='radio']{
+    accent-color: rgb(140, 255, 32);
+}
+select{
+    font-size: 22px;
+}
+span{
+    padding-right: 40px;
+}
+/* koniecformularza */
+
+/* stopka */
+table.dol {
+    margin-top: 40px;
+    padding-top: 20px;
+    
+  }
+  
+  th.dol1{
+    color: aliceblue;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    width: 1657px;
+    text-align: left;
+  }
+  
+  th.ikony {
+    width: 100px;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+  
+  }
+  
+  th.ikony:hover {
+    opacity: 1;
+  }
+/* koniecstopki */
+#opis-container{
+    color: white;
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Teko', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    letter-spacing: 3px;
+}
+h3{
+    margin-top: 100px;
+}
+li{
+    text-align: left;
+}
+
